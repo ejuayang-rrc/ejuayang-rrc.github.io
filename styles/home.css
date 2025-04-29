@@ -85,15 +85,16 @@ h2 {
 
 /* ================== Support ================== */
 
-#support {
+#support p {
+  max-width: 750px;
+  margin: 15px auto 30px;
+}
+
+#support-links {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   padding: 0px;
-}
-
-#support p {
-  
 }
 
 .support-block {
@@ -112,6 +113,11 @@ h2 {
 .support-block h3 {
   margin-top: 0px;
   text-align: center;
+}
+
+.support-block p {
+  max-width: 390px;
+  margin: 15px auto 30px;
 }
 
 /* ================== Larger Screens ================== */
