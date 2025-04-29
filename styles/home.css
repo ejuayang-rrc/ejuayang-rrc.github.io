@@ -1,4 +1,126 @@
 /* CSS Document */
 
-/* ================== General Elements ================== */
+h2 {
+  text-align: center;
+}
 
+#about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about video {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+#about div {
+  text-align: center;
+}
+
+#about p {
+  max-width: 750px;
+  margin: 15px auto;
+}
+
+#about-links {
+  text-align: center;
+  margin: 0px auto 15px;
+}
+
+#about-links img {
+  width: 20px;
+  padding: 10px;
+  filter: drop-shadow(-3px 3px 3px rgba(0, 0, 0, 0.1)) brightness(2) grayscale(100%);;
+}
+
+  #about-links img:hover {
+    filter: brightness(1) grayscale(0%);
+  }
+
+/* ================== Graphics ================== */
+
+#graphics,
+#editing,
+#programming {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  max-height: 275px; 
+}
+
+#graphics img {
+  width: 50%;
+  height: inherit;
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+}
+
+#graphics div,
+#editing div,
+#programming div {
+  width: 50%;
+}
+
+/* ================== Programming ================== */
+
+#programming img {
+  width: 50%;
+  height: auto;
+  border-radius: 0px 10px 10px 0px;
+  object-fit: cover;
+}
+
+/* ================== Editing ================== */
+
+#editing img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+}
+
+/* ================== Support ================== */
+
+#support {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+#support p {
+  
+}
+
+.support-block {
+  width: 50%;
+  padding: 0px;
+  color: #B0B1D1;
+  text-decoration: none;
+}
+
+.support-block video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.support-block h3 {
+  margin-top: 0px;
+  text-align: center;
+}
+
+/* ================== Larger Screens ================== */
+
+@media screen and (max-width: 900px) 
+{
+    #graphics,
+    #editing,
+    #programming {
+      max-height: none;
+    }
+}
