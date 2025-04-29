@@ -3,8 +3,11 @@
 :root {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
+  font-size: 15px;
   font-style: normal;
   background-color: #2A2C52;
+  color: #B0B1D1;
+  text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hidden {
@@ -12,13 +15,22 @@
 }
 
 #page-wrapper {
-  width: 900px;
+  width: 900px; 
   margin: 0 auto;
 }
 
 /* ================== Header Section ================== */
 
-header div {
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 30px;
+}
+
+#logo {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +39,7 @@ header div {
   margin: 0px;
 }
 
-header div h1 {
+#logo h1 {
   margin: 10px;
   text-shadow: -5px 5px 7px rgba(0, 0, 0, 0.3);
   font-family: "poppins", sans-serif;
@@ -36,7 +48,7 @@ header div h1 {
   font-size: 70px;
 }
 
-header div img {
+#logo img {
   filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.2));
   margin: 0px;
   height: 72px;
@@ -51,6 +63,7 @@ header nav {
 header a {
   font-family: proxima-nova, sans-serif;
   font-weight: 800;
+  font-size: 15px;
   font-style: normal;
   text-shadow: -3px 3px 7px rgba(0, 0, 0, 0.3);
   text-decoration: none;
@@ -60,12 +73,66 @@ header a {
 
     header a:hover {
       text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.1);
-      color: #FFCB5B;
+      color: #FFE760;
     }
 
 /* ================== General Elements ================== */
 
 section {
-  background-image: image();
+  background-color: #2A2C52;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(19,19,19,0.4);
   padding: 0px;
+  margin: 20px auto;
 }
+
+section div {
+  padding: 10px 20px;
+}
+
+h1 {
+  color: #F1F1F1;
+  font-size: 27px;
+  font-weight: 800;
+  margin: 10px auto;
+}
+
+h2 {
+  color: #F1F1F1;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 10px auto;
+}
+
+/* ================== Footer Styling ================== */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-weight: 700;
+  color: #B0B1D1;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+#links img {
+  width: 20px;
+  padding: 10px;
+  filter: drop-shadow(-3px 3px 3px rgba(0, 0, 0, 0.1)) brightness(2) grayscale(100%);;
+}
+
+  #links img:hover {
+    filter: brightness(1) grayscale(0%);
+  }
+
+footer a {
+  color: #B0B1D1;
+  text-decoration: none;
+}
+
+  footer a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
