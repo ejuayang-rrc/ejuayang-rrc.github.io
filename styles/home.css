@@ -53,7 +53,7 @@ h2 {
 #programming {
   display: flex;
   align-items: stretch;
-  max-height: 18em;
+  max-height: 17em;
   text-decoration: none;
   color: #B9B9BF;
 }
@@ -76,6 +76,7 @@ h2 {
 #editing div,
 #programming div {
   width: 50%;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +130,7 @@ h2 {
 
 .support-block video {
   width: 100%;
-  height: 400px;
+  height: 15em;
   object-fit: cover;
 }
 
@@ -139,7 +140,7 @@ h2 {
 
 .support-block p {
   max-width: 90%;
-  margin: 15px auto 30px;
+  margin: 15px auto 15px;
   text-align: center;
 }
 
@@ -156,15 +157,29 @@ h2 {
     #graphics img,
     #editing img,
     #programming img{
-      height: 20em;
+      height: 16.5em;
+    }
+  
+    #graphics div,
+    #editing div,
+    #programming div {
+      margin: 15px;
+      padding: 10px;
     }
 }
 
-@media only screen and (max-width: 710px) 
+@media only screen and (max-width: 650px) 
 {   
     #graphics img,
     #editing img,
     #programming img{
       height: auto;
+    }
+  
+    #graphics div,
+    #editing div,
+    #programming div {
+      margin: 5px;
+      padding: 5px;
     }
 }

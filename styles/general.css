@@ -3,7 +3,7 @@
 :root {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 16px;
   font-style: normal;
   color: #B9B9BF;
   background-image: url("../media/images/website-background.jpg");
@@ -178,7 +178,7 @@ footer a {
     text-decoration: none;
   }
 
-/* ================== Larger Screens ================== */
+/* ================== Smaller Screens ================== */
 
 @media only screen and (max-width: 900px) 
 {
@@ -214,5 +214,53 @@ footer a {
   header nav a {
     width: 100%;
     padding: 1em 0;
+  }
+  
+  /* ----- Text ----- */
+
+  h2 {
+    font-size: 1.07em;
+    margin: 5px auto;
+  }
+}
+
+/* ================== Mobile Screens ================== */
+
+@media only screen and (max-width: 650px) 
+{
+  :root {
+    font-size: 2.7vw;
+  }
+  
+  body {
+    margin: 0 6px;
+  }
+  
+  /* ----- Header ----- */
+  
+  #logo h1 {
+    font-size: 3em;
+  }
+
+  #logo img {
+    height: 2.88em;
+    width: 2.4em;
+  }
+  
+  /* ----- Text ----- */
+
+  h1 {
+    font-size: 1.25em;
+    margin: 5px auto;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    margin: 5px auto;
+  }
+  
+  p {
+    font-size: 0.935em;
+    margin: 5px;
   }
 }
