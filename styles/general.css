@@ -1,5 +1,86 @@
 /* CSS Document */
 
 :root {
-
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+
+#header {
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    mask {
+      display: grid;
+      place-content: center;
+      height: 100vh;
+    }
+
+    text {
+      font-family: "Inter Tight", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    #first-name {
+      font-size: 1em;
+    }
+
+    #last-name {
+      font-size: 0.71em;
+    }
+
+    rect {
+      fill: white;
+      mask: url("#mask");
+    }
+  }
+
+  nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    a {
+      margin: 0.5em;
+      color: #DB4646;
+      font-size: 1.5em;
+      font-weight: 800;
+      font-style: italic;
+      text-decoration: none;
+    }
+  }
+
+  video {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 50em;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* ===== DESKTOP STYLING ===== */
