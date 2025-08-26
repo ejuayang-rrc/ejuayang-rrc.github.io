@@ -133,7 +133,7 @@ body {
     object-fit: cover;
     -webkit-mask-image: linear-gradient(185.5deg, black, transparent 75%);
     mask-image: linear-gradient(185.5deg, black, transparent 75%);
-    filter: blur(7.5px) contrast(50%) brightness(90%) grayscale(75%) opacity(75%);
+    filter: blur(2.5px) contrast(50%) brightness(90%) grayscale(75%) opacity(75%);
   }
 
   #about-layout {
