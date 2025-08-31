@@ -251,10 +251,10 @@ body {
         margin: 0.2em;
         font-size: 2.5em;
         text-shadow:
-        -0.5px -0.5px 0 #fff,  
-        0.5px -0.5px 0 #fff,
-        -0.5px 0.5px 0 #fff,
-        0.5px 0.5px 0 #fff;
+          -0.5px -0.5px 0 #fff,  
+          0.5px -0.5px 0 #fff,
+          -0.5px 0.5px 0 #fff,
+          0.5px 0.5px 0 #fff;
       }
     }
   }
@@ -276,6 +276,10 @@ body {
       margin: 3.5em 1.5em;
       font-size: 0.85em;
       flex-direction: column-reverse;
+    }
+
+    #about-bkg {
+      transform: scale(1);
     }
 
     #about-img {
